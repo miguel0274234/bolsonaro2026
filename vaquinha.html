@@ -3,362 +3,225 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>🌟 MOBILIZAÇÃO NACIONAL: Libertação Imediata!</title>
+    <title>🆘 URGENTE: Apoio Recuperação Jair Bolsonaro</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <style>
-        /* CSS REVISADO: CLEAN, MODERNO E DATA-DRIVEN */
         :root {
-            /* Cores Modernas e Clean */
-            --primary-color: #007bff; /* Azul vibrante e confiável (Bootstrap Primary) */
-            --primary-dark: #0056b3;
-            --text-color: #212529; /* Quase preto para alta legibilidade */
-            --background-color: #f8f9fa; /* Cinza claro suave */
-            --alert-color: #dc3545; /* Vermelho de urgência (Mais sutil que o anterior) */
-            --alert-dark: #c82333;
-            --safe-color: #28a745; /* Verde de sucesso/segurança */
+            --primary-color: #2c3e50; 
+            --primary-dark: #1a252f;
+            --text-color: #212529;
+            --background-color: #f4f7f6;
+            --alert-color: #e74c3c; /* Vermelho médico/urgência */
+            --alert-dark: #c0392b;
+            --safe-color: #27ae60;
             --card-background: #ffffff;
-            --shadow-subtle: 0 4px 10px rgba(0, 0, 0, 0.05); /* Sombra super sutil */
+            --shadow-subtle: 0 4px 12px rgba(0, 0, 0, 0.08);
             --font-stack: 'Poppins', sans-serif;
-            --spacing-xl: 50px;
-            --spacing-large: 35px;
+            --spacing-large: 30px;
             --spacing-medium: 20px;
-            --spacing-small: 10px;
         }
 
-        /* Base e Resets */
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
 
         body {
             font-family: var(--font-stack);
             background-color: var(--background-color);
             color: var(--text-color);
-            line-height: 1.6; /* Aumentado para leitura moderna */
-            min-height: 100vh;
+            line-height: 1.6;
+            padding-bottom: 100px;
         }
 
         .container {
-            max-width: 650px; /* Um pouco mais estreito, mais foco */
+            max-width: 600px;
             margin: 0 auto;
-            padding: var(--spacing-medium) var(--spacing-medium) 100px; 
+            padding: var(--spacing-medium);
         }
 
-        a {
-            text-decoration: none;
-            color: var(--primary-color);
-            transition: color 0.3s ease;
-        }
-
-        /* CARDS E SEÇÕES - Minimalismo */
         .card {
-            background-color: var(--card-background);
-            border-radius: 12px; /* Mais simples */
+            background: var(--card-background);
+            border-radius: 15px;
             box-shadow: var(--shadow-subtle);
-            margin-top: var(--spacing-medium);
-            padding: var(--spacing-large); /* Aumentado para mais espaço */
-            transition: all 0.3s ease;
-            border: 1px solid #e9ecef; /* Borda ultra-fina para definição */
+            margin-bottom: var(--spacing-medium);
+            padding: var(--spacing-large);
+            border: 1px solid #eee;
         }
 
-        /* 1. CABEÇALHO/IMAGEM */
-        .hero {
-            text-align: center;
-            padding: var(--spacing-large) 0;
-            margin-bottom: var(--spacing-large);
+        /* HEADER / IMAGEM */
+        .hero-section { text-align: center; }
+        
+        .status-badge {
+            background: var(--alert-color);
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.8em;
+            font-weight: 700;
+            text-transform: uppercase;
+            display: inline-block;
+            margin-bottom: 10px;
         }
 
-        .hero-image {
+        .medical-image {
             width: 100%;
-            max-height: 350px;
-            object-fit: cover;
-            border-radius: 12px;
-            margin-bottom: var(--spacing-medium);
-            border: none; /* Removendo borda colorida para clean */
-            box-shadow: var(--shadow-subtle);
+            border-radius: 10px;
+            margin-bottom: 15px;
+            border: 3px solid #fff;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
         }
 
-        .title {
-            font-size: 2.2em;
-            color: var(--primary-dark); 
-            font-weight: 900; /* Mais impacto */
-            margin-bottom: var(--spacing-small);
-            text-transform: none; /* Menos agressivo */
+        h1 {
+            font-size: 1.8em;
+            color: var(--primary-dark);
             line-height: 1.2;
+            margin-bottom: 10px;
         }
 
-        .subtitle {
-            font-size: 1.05em;
-            color: #6c757d; /* Cinza de destaque suave */
-            padding: 0 5px;
-            font-weight: 400;
-        }
-
-        /* 2. PROGRESSO E VALORES (O Coração da Vaquinha) */
-        .progress-section {
-            text-align: center;
-            padding: var(--spacing-medium); /* Padding reduzido para focar no conteúdo */
-            border: none;
-            background-color: var(--card-background); /* Fundo branco puro */
-        }
-
-        .progress-bar-container {
-            height: 10px; /* Mais fino */
-            background-color: #e9ecef;
-            border-radius: 5px;
-            margin-bottom: var(--spacing-medium);
+        /* PROGRESSO */
+        .progress-container {
+            background: #eee;
+            height: 12px;
+            border-radius: 10px;
+            margin: 20px 0 10px;
+            overflow: hidden;
         }
 
         .progress-bar {
+            background: var(--safe-color);
             height: 100%;
-            background-color: var(--alert-color); 
-            border-radius: 5px;
-            transition: width 0.8s ease-in-out;
+            width: 35%; /* Ajuste conforme arrecadação */
+            transition: width 1s ease-in-out;
         }
 
-        .metrics {
+        .stats {
             display: flex;
-            justify-content: space-around;
-            gap: 15px;
-            margin-bottom: var(--spacing-medium);
-            padding: var(--spacing-small) 0;
-            border-bottom: 1px solid #eee;
+            justify-content: space-between;
+            margin-bottom: 20px;
         }
 
-        .metric-item {
-            flex-basis: 50%; /* Garante que ocupem metade do espaço cada */
-            text-align: left;
-            padding-left: 20px;
-            position: relative;
-        }
-
-        .metric-item:first-child::after {
-            content: '';
-            position: absolute;
-            right: 0;
-            top: 10%;
-            height: 80%;
-            width: 1px;
-            background-color: #ddd;
-        }
-
-        .metric-item .value {
-            font-size: 1.6em; 
+        .stat-val {
+            font-size: 1.4em;
             font-weight: 800;
-            color: var(--text-color); /* Neutro para os valores */
             display: block;
         }
 
-        .metric-item:first-child .value {
-            color: var(--alert-color); /* Destacando o arrecadado em vermelho */
-        }
-
-        .metric-item .label {
-            font-size: 0.85em;
-            color: #6c757d;
+        .stat-label {
+            font-size: 0.8em;
+            color: #7f8c8d;
             text-transform: uppercase;
-            letter-spacing: 0.5px;
-            font-weight: 500;
         }
 
-        .percentage {
-            font-size: 1.2em;
-            font-weight: 700;
-            color: var(--alert-color);
-            padding-top: var(--spacing-small);
-            border-top: none; 
-            margin-top: 0;
+        /* CONTEÚDO MÉDICO */
+        .medical-report {
+            background: #fff9f9;
+            border-left: 5px solid var(--alert-color);
+            padding: 15px;
+            margin: 20px 0;
+            font-size: 0.95em;
         }
 
-        .urgent-call {
-            color: var(--text-color);
-            font-weight: 400;
-            margin-top: var(--spacing-medium);
-            font-size: 1em;
-        }
-
-        .urgent-call strong {
-            color: var(--alert-dark);
-            font-weight: 700;
-            font-size: 1.05em;
-            background-color: #fff3cd; /* Fundo amarelo claro para destaque real */
-            padding: 3px 5px;
-            border-radius: 4px;
-        }
-
-
-        /* 3. CHAMADA PARA AÇÃO (CTA) */
-        .cta-section {
-            padding: var(--spacing-large) var(--spacing-small);
+        /* BOTÕES */
+        .btn-donate {
+            display: block;
+            background: var(--safe-color);
+            color: white;
             text-align: center;
-        }
-
-        .cta-button {
-            display: block; /* Para ocupar toda a largura */
-            padding: 24px 20px;
-            font-size: 1.6em; 
-            background-color: var(--alert-color);
-            color: var(--card-background);
+            padding: 20px;
             border-radius: 10px;
-            box-shadow: 0 8px 15px rgba(220, 53, 69, 0.4); 
+            font-size: 1.3em;
             font-weight: 700;
-            transition: all 0.2s ease;
-            text-transform: uppercase;
+            text-decoration: none;
+            box-shadow: 0 5px 15px rgba(39, 174, 96, 0.3);
+            transition: transform 0.2s;
         }
 
-        .cta-button:hover {
-            background-color: var(--alert-dark);
-            transform: translateY(-4px); /* Efeito 3D mais pronunciado */
-            box-shadow: 0 12px 20px rgba(220, 53, 69, 0.6); 
-        }
+        .btn-donate:hover { transform: scale(1.02); background: #219150; }
 
-        .security-info {
-            margin-top: var(--spacing-medium);
-            font-size: 0.9em;
-            color: #6c757d;
-        }
-
-        .security-info i {
-            color: var(--safe-color);
-            font-size: 1.2em;
-            margin: 0 5px;
-        }
-
-        /* 4. CONTEÚDO */
-        .content-section {
-            margin-top: var(--spacing-large);
-        }
-
-        .content-section h2 {
-            font-size: 1.5em;
-            margin-bottom: var(--spacing-medium);
-            color: var(--primary-color);
-            border-bottom: 2px solid #e9ecef; /* Linha de separação mais clean */
-            padding-bottom: 8px;
-            font-weight: 700;
-        }
-
-        .content-section p {
-            margin-bottom: var(--spacing-medium);
-        }
-
-        .content-section ul {
-            list-style: none; /* Remove bolinhas nativas */
-            padding-left: 0;
-        }
-
-        .content-section ul li {
-            margin-bottom: var(--spacing-small);
-            padding-left: 2em; /* Espaço para o ícone customizado */
-            text-indent: -1.5em;
-        }
-
-        .content-section ul li::before {
-            content: "✅"; /* Checkmark moderno */
-            margin-right: 0.5em;
-            font-size: 1em;
-            font-weight: bold;
-        }
-
-
-        /* CTA FIXO (STICKY FOOTER) - Máximo Destaque */
-        .sticky-cta {
+        .sticky-footer {
             position: fixed;
             bottom: 0;
-            left: 0;
             width: 100%;
-            padding: 18px 15px;
-            font-size: 1.3em;
-            background-color: var(--alert-color); 
-            color: var(--card-background);
-            text-align: center;
-            font-weight: 700;
-            box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.15);
+            background: white;
+            padding: 15px;
+            box-shadow: 0 -5px 20px rgba(0,0,0,0.1);
+            display: flex;
+            justify-content: center;
             z-index: 1000;
-            transition: background-color 0.2s;
         }
 
-        .sticky-cta:hover {
-            background-color: var(--alert-dark);
-        }
-
-        /* RESPONSIVIDADE */
-        @media (min-width: 601px) {
-            .container {
-                padding: var(--spacing-large) 20px 100px;
-            }
+        .footer-btn {
+            width: 100%;
+            max-width: 500px;
+            background: var(--alert-color);
+            color: white;
+            text-align: center;
+            padding: 12px;
+            border-radius: 8px;
+            font-weight: 700;
+            text-decoration: none;
         }
     </style>
 </head>
 <body>
 
-    <div class="container">
+<div class="container">
+    
+    <div class="card hero-section">
+        <span class="status-badge"><i class="fas fa-circle-dot fa-beat"></i> Emergência Médica</span>
+        <img src="image (7).png" alt="Relatório Médico" class="medical-image">
         
-        <header class="hero" role="banner">
-            <figure>
-                <img src="image (7).png" alt="Símbolo de mobilização e liberdade" class="hero-image">
-            </figure>
-            <h1 class="title">LIBERTAÇÃO URGENTE: FIANÇA NACIONAL!</h1>
-            <p class="subtitle">A última mobilização pelo futuro! Contribua agora para atingirmos a meta final e garantir a liberdade do nosso líder.</p>
-        </header>
-
-        <main role="main">
-            <section class="progress-section card">
-                <div class="progress-bar-container" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" role="progressbar">
-                    <div class="progress-bar" style="width: 50%;"></div>
-                </div>
-                
-                <p class="percentage">📢 40% DA META FINALIZADA!</p>
-
-                <div class="metrics">
-                    <div class="metric-item">
-                        <span class="value">R$ 5.000.000,00</span>
-                        <span class="label">ARRECADADO</span>
-                    </div>
-                    <div class="metric-item">
-                        <span class="value">R$ 10.000.000,00</span>
-                        <span class="label">META FINAL</span>
-                    </div>
-                </div>
-
-                <p class="urgent-call">Se CADA Um contribuir com apenas <strong>R$ 49,99</strong>, atingiremos 100% da meta em 48 horas!</p>
-            </section>
-
-            <section class="cta-section">
-                <a href="https://pay.cakto.com.br/t7iu4o2_688755" class="cta-button" target="_blank" rel="noopener noreferrer" role="button">
-                    <i class="fas fa-arrow-circle-right"></i> CONTRIBUIÇÃO DE R$ 49,99 - AGORA!
-                </a>
-                
-                <div class="security-info">
-                    <i class="fas fa-lock"></i>
-                    <span>Checkout blindado e seguro.</span>
-                    <i class="fas fa-shield-alt"></i>
-                </div>
-            </section>
-            
-            <section class="content-section card">
-                <h2><i class="fas fa-chart-line"></i> Transparência e Destino dos Fundos</h2>
-                <p>Nossa mobilização é transparente e focada em resultados. O valor da fiança é a prioridade, e cada real contribuído tem um propósito fundamental:</p>
-                <ul>
-                    <li>Garantir o valor integral da fiança exigida judicialmente.</li>
-                    <li>Cobertura de custos jurídicos emergenciais e recursos imediatos.</li>
-                    <li>Mobilização nacional e estruturação da próxima fase do movimento.</li>
-                </ul>
-                <p>Juntos, somos a força que garante a liberdade!</p>
-            </section>
-
-        </main>
-
+        <h1>Cirurgia de Emergência: Recuperação Jair Bolsonaro</h1>
+        <p style="color: #7f8c8d; font-size: 0.9em;">Após traumatismo craniano, ex-presidente passa por cirurgia e necessita de cuidados intensivos imediatos.</p>
     </div>
 
-    <a href="https://pay.cakto.com.br/t7iu4o2_688755" class="sticky-cta" target="_blank" rel="noopener noreferrer">
-        <i class="fas fa-circle-exclamation"></i> DOE AGORA: LIBERTAÇÃO IMEDIATA!
+    <div class="card">
+        <div class="stats">
+            <div>
+                <span class="stat-val" style="color: var(--safe-color);">R$ 17.500</span>
+                <span class="stat-label">Arrecadado</span>
+            </div>
+            <div style="text-align: right;">
+                <span class="stat-val">R$ 50.000</span>
+                <span class="stat-label">Meta Necessária</span>
+            </div>
+        </div>
+
+        <div class="progress-container">
+            <div class="progress-bar"></div>
+        </div>
+        <p style="text-align: center; font-size: 0.85em; font-weight: 600;">35% da meta alcançada</p>
+
+        <div class="medical-report">
+            <strong><i class="fas fa-file-medical"></i> Laudo Resumido:</strong><br>
+            Paciente apresentou quadro de traumatismo craniano severo. Procedimento cirúrgico realizado para descompressão. O custo total inclui internação UTI, honorários da equipe neurocirúrgica e medicação pós-operatória.
+        </div>
+
+        <p style="margin-bottom: 20px;">Precisamos de <strong>1.000 pessoas</strong> contribuindo com apenas <strong>R$ 50,00</strong> para cobrir todos os custos hospitalares nas próximas 24 horas.</p>
+
+        <a href="https://pay.cakto.com.br/36htwdk_709046" class="btn-donate">
+            <i class="fas fa-heart-pulse"></i> DOAR R$ 50,00 AGORA
+        </a>
+        <p style="text-align: center; font-size: 0.7em; margin-top: 10px; color: #999;">
+            <i class="fas fa-lock"></i> Pagamento Processado via Gateway Seguro
+        </p>
+    </div>
+
+    <div class="card">
+        <h3><i class="fas fa-info-circle"></i> Onde será usado o valor?</h3>
+        <ul style="margin-top: 15px; list-style: none; font-size: 0.9em;">
+            <li style="margin-bottom: 10px;"><i class="fas fa-check-circle" style="color: var(--safe-color);"></i> R$ 35.000 - Cirurgia e Equipe Médica.</li>
+            <li style="margin-bottom: 10px;"><i class="fas fa-check-circle" style="color: var(--safe-color);"></i> R$ 10.000 - Internação e UTI.</li>
+            <li style="margin-bottom: 10px;"><i class="fas fa-check-circle" style="color: var(--safe-color);"></i> R$ 5.000 - Tratamentos e Medicação.</li>
+        </ul>
+    </div>
+
+</div>
+
+<div class="sticky-footer">
+    <a href="https://pay.cakto.com.br/36htwdk_709046" class="footer-btn">
+        CONTRIBUIR COM A RECUPERAÇÃO <i class="fas fa-arrow-right"></i>
     </a>
+</div>
 
 </body>
-
 </html>
-
